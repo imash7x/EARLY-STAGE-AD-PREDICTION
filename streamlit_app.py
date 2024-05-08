@@ -5,7 +5,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
-voting_classifier = joblib.load("voting_classifier.pkl")
+voting_classifier = joblib.load("APPLICATION/voting_classifier.pkl")
 stage_classifier = joblib.load("APPLICATION/stage_classifier.pkl")
 
 scaler = MinMaxScaler().fit([[0, 0, 0, 0, 0, 0, 0, 0]])
